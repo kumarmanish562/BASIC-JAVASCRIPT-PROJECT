@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Quiz Application</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <!-- Info Box -->
+  <div class="info-box">
+    <div class="info-title"><span>Rules of this Quiz</span></div>
+    <div class="info-list">
+      <div class="info">1. You will be given <span>10 seconds</span> to answer each question.</div>
+      <div class="info">2. Once you answer a question, you can't undo your answer.</div>
+      <div class="info">3. You can't access the solution after the quiz is over.</div>
+      <div class="info">4. You can't leave the quiz while you're playing.</div>
+      <div class="buttons">
+        <button id="continue-btn">Continue</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Start Screen -->
+  <div class="start-screen hidden">
+    <h1>Quiz Application</h1>
+    <button id="start-quiz">Start Quiz</button>
+  </div>
+
+  <!-- Quiz Screen -->
+  <div class="quiz-container hidden">
+    <div class="question-box">
+      <h2 id="question">Question text will appear here</h2>
+    </div>
+    <div class="options-box">
+      <button class="option">Option 1</button>
+      <button class="option">Option 2</button>
+      <button class="option">Option 3</button>
+      <button class="option">Option 4</button>
+    </div>
+    <div class="quiz-footer">
+      <button id="next-button" class="hidden">Next Question</button>
+    </div>
+  </div>
+
+  <!-- Result Screen -->
+  <div class="result-screen hidden">
+    <h2>Your Score: <span id="score">0</span> / <span id="total-questions">0</span></h2>
+    <button id="restart-quiz">Restart Quiz</button>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
